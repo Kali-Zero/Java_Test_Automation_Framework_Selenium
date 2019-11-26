@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/TestAutomation.iml" filepath="$PROJECT_DIR$/TestAutomation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/domain/domain.iml" filepath="$PROJECT_DIR$/domain/domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/framework/framework.iml" filepath="$PROJECT_DIR$/framework/framework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pageobjects/pageobjects.iml" filepath="$PROJECT_DIR$/pageobjects/pageobjects.iml" />
+      <module fileurl="file://$PROJECT_DIR$/regressiontests/regressiontests.iml" filepath="$PROJECT_DIR$/regressiontests/regressiontests.iml" />
+    </modules>
+  </component>
+</project>
