@@ -15,18 +15,12 @@
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <selenium.version>3.14.0</selenium.version>
-        <webdrivermanager.version>3.0.0</webdrivermanager.version>
+        <selenium.version>3.141.59</selenium.version>
+        <webdrivermanager.version>3.7.1</webdrivermanager.version>
         <java.version>11</java.version>
         <testng.version>6.14.3</testng.version>
     </properties>
-    <dependencies>
-        <!-- Selenium dependencies -->
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-chrome-driver</artifactId>
-            <version>${selenium.version}</version>
-        </dependency>
+    <dependencies> <!-- Selenium dependencies -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-server</artifactId>
@@ -37,27 +31,45 @@
             <artifactId>selenium-java</artifactId>
             <version>${selenium.version}</version>
         </dependency>
-        <dependency>
+        <dependency> <!-- WebDriver Manager https://github.com/bonigarcia/webdrivermanager/commit/0dfc857162a8aadb59d23b6c0cdd7a642b2b79b2 -->
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
             <version>${webdrivermanager.version}</version>
         </dependency>
-        <!-- TestNG dependency -->
-        <dependency>
+        <dependency> <!-- Chrome WebDriver https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver -->
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-chrome-driver</artifactId>
+            <version>${selenium.version}</version>
+        </dependency>
+        <dependency> <!-- Firefox WebDriver https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-firefox-driver -->
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-firefox-driver</artifactId>
+            <version>${webdrivermanager.version}</version>
+        </dependency>
+        <dependency> <!-- MSEdge Webdriver https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-edge-driver -->
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-edge-driver</artifactId>
+            <version>${webdrivermanager.version}</version>
+        </dependency>
+        <dependency> <!-- IE11 Webdriver https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-ie-driver -->
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-ie-driver</artifactId>
+            <version>${webdrivermanager.version}</version>
+        </dependency>
+        <dependency> <!-- TestNG dependency -->
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>${testng.version}</version>
         </dependency>
-        <!-- I don't know why this is needed, but it is -Kali  -->
-        <dependency>
+        <dependency> <!-- Simple Logging Facade https://mvnrepository.com/artifact/org.slf4j/slf4j-api  -->
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
-            <version>1.7.5</version>
+            <version>1.7.29</version>
         </dependency>
-        <dependency>
+        <dependency> <!-- Simple Logging Facade Binding https://mvnrepository.com/artifact/org.slf4j/slf4j-log4j12  -->
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-log4j12</artifactId>
-            <version>1.7.5</version>
+            <version>1.7.29</version>
         </dependency>
         <dependency>
             <groupId>io.rest-assured</groupId>
@@ -65,15 +77,13 @@
             <version>3.3.0</version>
             <scope>test</scope>
         </dependency>
-        <!-- Extent Reports 4 https://mvnrepository.com/artifact/com.aventstack/extentreports -->
-        <dependency>
+        <dependency> <!-- Extent Reports 4 https://mvnrepository.com/artifact/com.aventstack/extentreports -->
             <groupId>com.aventstack</groupId>
             <artifactId>extentreports</artifactId>
             <version>4.0.9</version>
             <scope>compile</scope>
         </dependency>
-        <!-- Extent Reports  2, remove once 4.0 is fully integrated-->
-        <dependency>
+        <dependency> <!-- Extent Reports  2, remove once 4.0 is fully integrated-->
             <groupId>com.relevantcodes</groupId>
             <artifactId>extentreports</artifactId>
             <version>2.41.2</version>

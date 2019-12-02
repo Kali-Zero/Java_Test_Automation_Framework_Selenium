@@ -4,6 +4,7 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 import io.github.bonigarcia.wdm.ChromeDriverManager;
+import io.github.bonigarcia.wdm.FirefoxDriverManager;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Dimension;
@@ -12,6 +13,10 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.AfterSuite;
@@ -68,21 +73,47 @@ public class BaseTest {
     }
 
     @BeforeMethod
-    public void beforeMethod(Method method) throws IOException {
+    public FirefoxDriver beforeMethod(Method method) throws IOException {
         prop.load(new FileInputStream(new File("./../framework/src/main/java/resources/config.properties")));
         test = extent.startTest((this.getClass().getSimpleName()+" - "+method.getName()));
-        WebDriverManager.chromedriver().version(prop.getProperty("chromedriver_version")).setup();
-        System.setProperty("is_headless", prop.getProperty("is_headless"));
-        String headless = System.getProperty("is_headless");
-        ChromeDriverManager.chromedriver();
-        if("true".equals(headless)) {
-            ChromeOptions chromeOptions = new ChromeOptions();
-            chromeOptions.addArguments("--headless");
-            driver = new ChromeDriver(chromeOptions);
-        }else {driver = new ChromeDriver();}
+        switch (prop.getProperty("browser")) {
+            case "Chrome":
+                WebDriverManager.chromedriver().version(prop.getProperty("chrome_version")).setup();
+                System.setProperty("is_headless", prop.getProperty("is_headless"));
+                String chrome_headless = System.getProperty("is_headless");
+                ChromeDriverManager.chromedriver();
+                if ("true".equals(chrome_headless)) {
+                    ChromeOptions chromeOptions = new ChromeOptions();
+                    chromeOptions.addArguments("--headless");
+                    driver = new ChromeDriver(chromeOptions);
+                } else {driver = new ChromeDriver();}
+                break;
+            case "Firefox":
+                WebDriverManager.firefoxdriver().version(prop.getProperty("firefox_version")).setup();
+                System.setProperty("is_headless", prop.getProperty("is_headless"));
+                String firefox_headless = System.getProperty("is_headless");
+                FirefoxDriverManager.firefoxdriver();
+                if ("true".equals(firefox_headless)) {
+                    FirefoxOptions firefoxOptions = new FirefoxOptions();
+                    firefoxOptions.addArguments("--headless");
+                    driver = new FirefoxDriver(firefoxOptions);
+                } else {driver = new FirefoxDriver();}
+                break;
+            case "MSEdge":  //TODO: Currently broken - fix later!!!
+                WebDriverManager.edgedriver().version(prop.getProperty("edge_version")).setup();
+                driver = new EdgeDriver();
+                break;
+            case "IE11":
+                WebDriverManager.iedriver().version(prop.getProperty("ie_version")).setup();
+                driver = new InternetExplorerDriver();
+                break;
+            default:
+                throw new IllegalStateException("Unexpected Browser Type: " + prop.getProperty("browser"));
+        }
         driver.manage().window().setSize(d);
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.get(prop.getProperty("base_url"));
+        return null;
     }
 
     @AfterMethod
@@ -103,7 +134,8 @@ public class BaseTest {
         extent.flush();
         if(driver != null) {
             driver.close();
-            driver.quit();
+            if (!prop.getProperty("browser").equals("Firefox")){driver.quit();}
+            //Bug id firefox is selected (tries to quit twice) - https://github.com/mozilla/geckodriver/issues/1235
         }
     }
 
