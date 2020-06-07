@@ -2,63 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b977fb8-0833-489d-8648-aa76b25460d2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ExtentReports/2019-12-02 01-37 PM - Automation Report - Development/2019-12-02 01-37 PM - Automation Report - Development.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ExtentReports/2019-12-02 01-39 PM - Automation Report - Development/2019-12-02 01-39 PM - Automation Report - Development.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Kali.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Kali.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okhttp3_okhttp_3_10_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okhttp3_okhttp_3_11_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okio_okio_1_14_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okio_okio_1_14_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_net_commons_net_3_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_bonigarcia_webdrivermanager_3_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_bonigarcia_webdrivermanager_3_7_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_htmlunit_htmlunit_2_30.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_htmlunit_htmlunit_core_js_2_28.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_htmlunit_htmlunit_cssparser_1_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_htmlunit_neko_htmlunit_2_30.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_compress_1_14.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_compress_1_18.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_8_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_text_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_6.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_6.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_5_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_5_3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_client_9_4_8_v20180619.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_http_9_4_8_v20180619.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_io_9_4_8_v20180619.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_util_9_4_8_v20180619.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_xml_9_4_8_v20180619.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_api_9_4_8_v20180619.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_client_9_4_8_v20180619.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_common_9_4_8_v20180619.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_rauschig_jarchivelib_0_8_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_rauschig_jarchivelib_1_0_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_htmlunit_driver_2_30_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_jetty_repacked_9_4_8_v20180619.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_jetty_repacked_9_4_12_v20180830.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_api_3_14_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_api_3_141_59.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_chrome_driver_3_14_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_chrome_driver_3_141_59.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_edge_driver_3_14_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_edge_driver_3_7_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_firefox_driver_3_14_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_firefox_driver_3_7_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_ie_driver_3_14_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_ie_driver_3_7_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_java_3_14_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_java_3_141_59.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_opera_driver_3_14_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_opera_driver_3_141_59.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_remote_driver_3_14_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_remote_driver_3_141_59.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_safari_driver_3_14_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_safari_driver_3_141_59.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_server_3_14_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_server_3_141_59.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_support_3_14_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_support_3_141_59.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_29.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_29.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xalan_serializer_2_7_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xalan_xalan_2_7_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xerces_xercesImpl_2_11_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_4_01.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExtentReports/2020-06-07 05-01 PM - Automation Report - Development - Chrome/2020-06-07 05-01 PM - Automation Report - Development - Chrome - Screenshots/doesAppsLinkWork - 2020-06-07 05-01 PM.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExtentReports/2020-06-07 05-01 PM - Automation Report - Development - Chrome/2020-06-07 05-01 PM - Automation Report - Development - Chrome.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExtentReports/2020-06-07 05-17 PM - Automation Report - Development - Chrome/2020-06-07 05-17 PM - Automation Report - Development - Chrome.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framework/src/main/java/resources/ABLlogo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExtentReports/2019-11-26 11-47 AM - Automation Report - Development/2019-11-26 11-47 AM - Automation Report - Development - Screenshots/doesAppsLinkWork - 2019-11-26 11-47 AM.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExtentReports/2019-11-26 11-47 AM - Automation Report - Development/2019-11-26 11-47 AM - Automation Report - Development.html" beforeDir="false" afterPath="$PROJECT_DIR$/ExtentReports/2019-12-02 01-36 PM - Automation Report - Development/2019-12-02 01-36 PM - Automation Report - Development.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestAutomation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TestAutomation.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/domain.iml" beforeDir="false" afterPath="$PROJECT_DIR$/domain/domain.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/framework.iml" beforeDir="false" afterPath="$PROJECT_DIR$/framework/framework.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/framework/src/main/java/core/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/framework/src/main/java/core/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/framework/src/main/java/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/framework/src/main/java/resources/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pageobjects/pageobjects.iml" beforeDir="false" afterPath="$PROJECT_DIR$/pageobjects/pageobjects.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/regressiontests/regressiontests.iml" beforeDir="false" afterPath="$PROJECT_DIR$/regressiontests/regressiontests.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/src/main/java/resources/extent-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/framework/src/main/java/resources/extent-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/regressiontests/src/test/java/googlehomepagetests/GoogleHomepageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/regressiontests/src/test/java/googlehomepagetests/GoogleHomepageTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,20 +31,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
   <component name="ProjectId" id="1Osl4CWYZLCMYC3oEcCATu49Z7b" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -100,6 +45,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../MP3Player" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.59195405" />
@@ -107,14 +53,32 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Kali's Files\0_IdeaProjects\KaliTAF\framework\src\main\java\resources" />
       <recent name="C:\Kali's Files\0_IdeaProjects\KaliTAF" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.GoogleHomepageTests.doesAboutLinkWork">
+  <component name="RunManager" selected="TestNG.C:/Kali's Files/0_IdeaProjects/KaliTAF/regressiontests/TestNG.xml">
     <configuration name="C:/Kali's Files/0_IdeaProjects/KaliTAF/regressiontests/TestNG.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="regressiontests" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/regressiontests/TestNG.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GoogleHomepageTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="regressiontests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="googlehomepagetests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="googlehomepagetests" />
+      <option name="MAIN_CLASS_NAME" value="googlehomepagetests.GoogleHomepageTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -175,45 +139,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GoogleHomepageTests.doesSignInButtonWork" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="regressiontests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="googlehomepagetests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="googlehomepagetests" />
-      <option name="MAIN_CLASS_NAME" value="googlehomepagetests.GoogleHomepageTests" />
-      <option name="METHOD_NAME" value="doesSignInButtonWork" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.GoogleHomepageTests.doesAboutLinkWork" />
         <item itemvalue="TestNG.C:/Kali's Files/0_IdeaProjects/KaliTAF/regressiontests/TestNG.xml" />
+        <item itemvalue="TestNG.GoogleHomepageTests.doesAboutLinkWork" />
+        <item itemvalue="TestNG.GoogleHomepageTests" />
         <item itemvalue="TestNG.GoogleHomepageTests.doesGmailLinkWork" />
         <item itemvalue="TestNG.GoogleHomepageTests.doesAppsLinkWork" />
-        <item itemvalue="TestNG.GoogleHomepageTests.doesSignInButtonWork" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -258,58 +192,56 @@
       <workItem from="1574881755078" duration="1294000" />
       <workItem from="1574992122064" duration="80000" />
       <workItem from="1575300800041" duration="74000" />
-      <workItem from="1575300918300" duration="9533000" />
+      <workItem from="1575300918300" duration="9820000" />
+      <workItem from="1575386739333" duration="1358000" />
+      <workItem from="1575911387425" duration="780000" />
+      <workItem from="1575997244462" duration="40000" />
+      <workItem from="1584040092193" duration="818000" />
+      <workItem from="1591478520883" duration="602000" />
+      <workItem from="1591480043994" duration="2611000" />
+      <workItem from="1591542115247" duration="9527000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="379" y="262" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1575300861229">
+    <state width="1453" height="231" key="GridCell.Tab.0.bottom" timestamp="1591564667593">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1453" height="231" key="GridCell.Tab.0.bottom/1920.-12.1707.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591564667593" />
+    <state width="1453" height="231" key="GridCell.Tab.0.center" timestamp="1591564667593">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1453" height="231" key="GridCell.Tab.0.center/1920.-12.1707.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591564667593" />
+    <state width="1453" height="231" key="GridCell.Tab.0.left" timestamp="1591564667593">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1453" height="231" key="GridCell.Tab.0.left/1920.-12.1707.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591564667593" />
+    <state width="1453" height="231" key="GridCell.Tab.0.right" timestamp="1591564667593">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1453" height="231" key="GridCell.Tab.0.right/1920.-12.1707.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591564667593" />
+    <state x="549" y="337" key="com.intellij.ide.util.TipDialog" timestamp="1584040093732">
       <screen x="0" y="0" width="1707" height="1027" />
     </state>
-    <state x="379" y="262" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1707.1027@0.0.1707.1027" timestamp="1575300861229" />
-    <state width="1342" height="240" key="GridCell.Tab.0.bottom" timestamp="1575325630863">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1342" height="240" key="GridCell.Tab.0.bottom/0.0.1707.1027@0.0.1707.1027" timestamp="1575323715427" />
-    <state width="1342" height="240" key="GridCell.Tab.0.bottom/1920.0.1707.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575325630863" />
-    <state width="1342" height="240" key="GridCell.Tab.0.center" timestamp="1575325630863">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1342" height="240" key="GridCell.Tab.0.center/0.0.1707.1027@0.0.1707.1027" timestamp="1575323715427" />
-    <state width="1342" height="240" key="GridCell.Tab.0.center/1920.0.1707.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575325630863" />
-    <state width="1342" height="240" key="GridCell.Tab.0.left" timestamp="1575325630863">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1342" height="240" key="GridCell.Tab.0.left/0.0.1707.1027@0.0.1707.1027" timestamp="1575323715427" />
-    <state width="1342" height="240" key="GridCell.Tab.0.left/1920.0.1707.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575325630863" />
-    <state width="1342" height="240" key="GridCell.Tab.0.right" timestamp="1575325630863">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1342" height="240" key="GridCell.Tab.0.right/0.0.1707.1027@0.0.1707.1027" timestamp="1575323715427" />
-    <state width="1342" height="240" key="GridCell.Tab.0.right/1920.0.1707.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1575325630863" />
-    <state x="549" y="337" key="com.intellij.ide.util.TipDialog" timestamp="1575300917930">
-      <screen x="0" y="0" width="1707" height="1027" />
-    </state>
-    <state x="549" y="337" key="com.intellij.ide.util.TipDialog/0.0.1707.1027@0.0.1707.1027" timestamp="1575300917930" />
+    <state x="549" y="337" key="com.intellij.ide.util.TipDialog/0.0.1707.1027@0.0.1707.1027" timestamp="1584040093732" />
   </component>
   <component name="masterDetails">
     <states>

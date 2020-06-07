@@ -2,7 +2,7 @@
 <extentreports>
     <configuration>
         <!-- report theme: standard, dark -->
-        <theme>standard</theme>
+        <theme>dark</theme>
 
         <!-- document encoding: defaults to UTF-8 -->
         <encoding>UTF-8</encoding>
@@ -13,11 +13,15 @@
         <!-- title of the document -->
         <documentTitle>ExtentReports 2.0</documentTitle>
 
-        <!-- report name - displayed at top-nav -->
-        <reportName>KaliTAF Report</reportName>
+        <!-- Report name - displayed at top-nav-->
+        <reportName>
+            <!--Add a logo! (Not sure how to do it without the absolute path yet. Needs a relative path)-->
+            <![CDATA[<img width="25" height="25" alt="ABL Logo"
+            src="C:/Kali's Files/0_IdeaProjects/KaliTAF/framework/src/main/java/resources/ABLlogo.png"/>]]>
+        </reportName>
 
         <!-- report headline - displayed at top-nav, after reportHeadline -->
-        <reportHeadline> - Automation Report Headline!</reportHeadline>
+        <reportHeadline>KaliTAF Report - Automation Report Headline!</reportHeadline>
 
         <!-- global date format override: defaults to yyyy-MM-dd -->
         <dateFormat>yyyy-MM-dd</dateFormat>

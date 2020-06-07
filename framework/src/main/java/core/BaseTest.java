@@ -18,10 +18,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.ITestResult;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.AfterMethod;
+import org.testng.annotations.*;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -33,30 +31,24 @@ import java.util.concurrent.TimeUnit;
 
 public class BaseTest {
 
-    private BasePage basePage = new BasePage();
+    private final BasePage basePage = new BasePage();
     public WebDriver driver;
     public ExtentTest test;
     public Properties prop = new Properties();
     private static ExtentReports extent;
-    private Dimension d = new Dimension(1280,960);
-    private String extentFolder = "./../ExtentReports/";
-    private String timeStamp = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd hh-mm a"));
+    private final Dimension d = new Dimension(1280,960);
+    private final String extentFolder = "./../ExtentReports/";
+    private final String timeStamp = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd hh-mm a"));
 
     private String reportTitle()throws IOException {
         prop.load(new FileInputStream(new File("./../framework/src/main/java/resources/config.properties")));
         String env = "Unknown";
+        String webBrowser = prop.getProperty("browser");
         if     (prop.getProperty("base_url").contains(prop.getProperty("env_dev")))  {env = "Development";}
         else if(prop.getProperty("base_url").contains(prop.getProperty("env_prod"))) {env = "Production";}
         else if(prop.getProperty("base_url").contains(prop.getProperty("env_local"))){env = "Local";}
-        return timeStamp+" - Automation Report - "+env;
+        return timeStamp+" - Automation Report - "+env+ " - " +webBrowser;
     }
-
-    public void login(){
-        basePage.usernameField(driver).sendKeys(prop.getProperty("base_username"));
-        basePage.passwordField(driver).sendKeys(prop.getProperty("base_password"));
-        basePage.signInButton(driver).click();
-    }
-
     private String getScreenShot(String screenshotName) throws IOException{
         File source = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         //Relative path of the screenshot for the report (in Screenshots folder);
@@ -64,6 +56,11 @@ public class BaseTest {
         //Where to initially save the screenshot:
         FileUtils.copyFile(source, new File(extentFolder+reportTitle()+"/"+reportTitle()+" - Screenshots/"+screenshotName+" - "+timeStamp+".png"));
         return destination;
+    }
+    public void login(){
+        basePage.usernameField(driver).sendKeys(prop.getProperty("base_username"));
+        basePage.passwordField(driver).sendKeys(prop.getProperty("base_password"));
+        basePage.signInButton(driver).click();
     }
 
     @BeforeSuite
@@ -75,7 +72,13 @@ public class BaseTest {
     @BeforeMethod
     public FirefoxDriver beforeMethod(Method method) throws IOException {
         prop.load(new FileInputStream(new File("./../framework/src/main/java/resources/config.properties")));
+
+        //===This will display the method name as the test title
         test = extent.startTest((this.getClass().getSimpleName()+" - "+method.getName()));
+
+        //===This will display the method description as the test title (Not well formatted)
+        //test = extent.startTest((this.getClass().getSimpleName()+" - "+method.getAnnotation(Test.class).description()));
+
         switch (prop.getProperty("browser")) {
             case "Chrome":
                 WebDriverManager.chromedriver().version(prop.getProperty("chrome_version")).setup();

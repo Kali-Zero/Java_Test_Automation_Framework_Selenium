@@ -10,7 +10,7 @@ import core.BaseTest;
 
 public class GoogleHomepageTests extends BaseTest {
 
-    private GoogleHomePageObjects googleHomePageObjects = new GoogleHomePageObjects();
+    private final GoogleHomePageObjects googleHomePageObjects = new GoogleHomePageObjects();
 
     @Test (description ="Test 1: Does the 'About' link bring the user to the 'About' page?")
     public void doesAboutLinkWork() {
