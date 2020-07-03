@@ -9,7 +9,7 @@
     the results of running the suite.  If you have any questions or suggestions
     for improvements, let me know!
     Cheers!
-        -Kali@kalizero.com  
+        -Calista.Sullivan@gmail.com
 **To Run Tests:**
 ---
     Open the TestNG.xml file in the regressiontests module
