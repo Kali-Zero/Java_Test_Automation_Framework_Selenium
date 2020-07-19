@@ -7,11 +7,14 @@
         <!-- document encoding: defaults to UTF-8 -->
         <encoding>UTF-8</encoding>
 
+        <!-- enable or disable timeline on dashboard (currently does not work)-->
+        <enableTimeline>true</enableTimeline>
+
         <!-- protocol for script and stylesheets: defaults to https -->
         <protocol>https</protocol>
 
         <!-- title of the document -->
-        <documentTitle>ExtentReports 2.0</documentTitle>
+        <documentTitle>ExtentReports 2.41.2</documentTitle>
 
         <!-- Report name - displayed at top-nav-->
         <reportName>

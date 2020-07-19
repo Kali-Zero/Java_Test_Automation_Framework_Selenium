@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b977fb8-0833-489d-8648-aa76b25460d2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ExtentReports/2020-06-07 05-01 PM - Automation Report - Development - Chrome/2020-06-07 05-01 PM - Automation Report - Development - Chrome - Screenshots/doesAppsLinkWork - 2020-06-07 05-01 PM.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ExtentReports/2020-06-07 05-01 PM - Automation Report - Development - Chrome/2020-06-07 05-01 PM - Automation Report - Development - Chrome.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ExtentReports/2020-06-07 05-17 PM - Automation Report - Development - Chrome/2020-06-07 05-17 PM - Automation Report - Development - Chrome.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework/src/main/java/resources/ABLlogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExtentReports/2020-06-07 05-52 PM - Automation Report - Development - Chrome/2020-06-07 05-52 PM - Automation Report - Development - Chrome.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/framework/src/main/java/core/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/framework/src/main/java/core/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/src/main/java/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/framework/src/main/java/resources/config.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/framework/src/main/java/resources/extent-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/framework/src/main/java/resources/extent-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/regressiontests/src/test/java/googlehomepagetests/GoogleHomepageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/regressiontests/src/test/java/googlehomepagetests/GoogleHomepageTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +51,7 @@
       <recent name="C:\Kali's Files\0_IdeaProjects\KaliTAF" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Kali's Files/0_IdeaProjects/KaliTAF/regressiontests/TestNG.xml">
+  <component name="RunManager" selected="TestNG.GoogleHomepageTests.doesAboutLinkWork">
     <configuration name="C:/Kali's Files/0_IdeaProjects/KaliTAF/regressiontests/TestNG.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="regressiontests" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/regressiontests/TestNG.xml" />
@@ -141,8 +135,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/Kali's Files/0_IdeaProjects/KaliTAF/regressiontests/TestNG.xml" />
         <item itemvalue="TestNG.GoogleHomepageTests.doesAboutLinkWork" />
+        <item itemvalue="TestNG.C:/Kali's Files/0_IdeaProjects/KaliTAF/regressiontests/TestNG.xml" />
         <item itemvalue="TestNG.GoogleHomepageTests" />
         <item itemvalue="TestNG.GoogleHomepageTests.doesGmailLinkWork" />
         <item itemvalue="TestNG.GoogleHomepageTests.doesAppsLinkWork" />
@@ -222,22 +216,22 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1453" height="231" key="GridCell.Tab.0.bottom" timestamp="1591564667593">
+    <state width="1453" height="231" key="GridCell.Tab.0.bottom" timestamp="1591578127257">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1453" height="231" key="GridCell.Tab.0.bottom/1920.-12.1707.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591564667593" />
-    <state width="1453" height="231" key="GridCell.Tab.0.center" timestamp="1591564667593">
+    <state width="1453" height="231" key="GridCell.Tab.0.bottom/1920.-12.1707.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591578127257" />
+    <state width="1453" height="231" key="GridCell.Tab.0.center" timestamp="1591578127257">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1453" height="231" key="GridCell.Tab.0.center/1920.-12.1707.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591564667593" />
-    <state width="1453" height="231" key="GridCell.Tab.0.left" timestamp="1591564667593">
+    <state width="1453" height="231" key="GridCell.Tab.0.center/1920.-12.1707.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591578127257" />
+    <state width="1453" height="231" key="GridCell.Tab.0.left" timestamp="1591578127257">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1453" height="231" key="GridCell.Tab.0.left/1920.-12.1707.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591564667593" />
-    <state width="1453" height="231" key="GridCell.Tab.0.right" timestamp="1591564667593">
+    <state width="1453" height="231" key="GridCell.Tab.0.left/1920.-12.1707.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591578127257" />
+    <state width="1453" height="231" key="GridCell.Tab.0.right" timestamp="1591578127257">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1453" height="231" key="GridCell.Tab.0.right/1920.-12.1707.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591564667593" />
+    <state width="1453" height="231" key="GridCell.Tab.0.right/1920.-12.1707.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591578127257" />
     <state x="549" y="337" key="com.intellij.ide.util.TipDialog" timestamp="1584040093732">
       <screen x="0" y="0" width="1707" height="1027" />
     </state>

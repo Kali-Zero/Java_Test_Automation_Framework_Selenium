@@ -114,7 +114,7 @@ public class BaseTest {
                 throw new IllegalStateException("Unexpected Browser Type: " + prop.getProperty("browser"));
         }
         driver.manage().window().setSize(d);
-        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
         driver.get(prop.getProperty("base_url"));
         return null;
     }
