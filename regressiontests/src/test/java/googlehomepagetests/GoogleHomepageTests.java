@@ -12,7 +12,7 @@ public class GoogleHomepageTests extends BaseTest {
 
     private final GoogleHomePageObjects googleHomePageObjects = new GoogleHomePageObjects();
 
-    @Test (description ="Test 1: Does the 'About' link bring the user to the 'About' page?")
+    @Test (priority = 1, description ="Test 1: Does the 'About' link bring the user to the 'About' page?")
     public void doesAboutLinkWork() {
         WebDriverWait wait = new WebDriverWait(driver, 20);
         Assert.assertTrue(googleHomePageObjects.about(driver).isDisplayed());
@@ -23,7 +23,7 @@ public class GoogleHomepageTests extends BaseTest {
         test.log(LogStatus.PASS, "'About' URL is correct.");
     }
 
-    @Test (description ="Test 2: Does the 'Store' link bring the user to the 'Store' page?")
+    @Test (priority = 2, description ="Test 2: Does the 'Store' link bring the user to the 'Store' page?")
     public void doesStoreLinkWork() {
         WebDriverWait wait = new WebDriverWait(driver, 20);
         Assert.assertTrue(googleHomePageObjects.store(driver).isDisplayed());
@@ -34,7 +34,7 @@ public class GoogleHomepageTests extends BaseTest {
         test.log(LogStatus.PASS, "'Store' URL is correct.");
     }
 
-    @Test (description ="Test 3: Does the 'Gmail' link bring the user to the 'Gmail' page?")
+    @Test (priority = 3, description ="Test 3: Does the 'Gmail' link bring the user to the 'Gmail' page?")
     public void doesGmailLinkWork() {
         WebDriverWait wait = new WebDriverWait(driver, 20);
         Assert.assertTrue(googleHomePageObjects.gmail(driver).isDisplayed());
@@ -51,7 +51,7 @@ public class GoogleHomepageTests extends BaseTest {
         test.log(LogStatus.PASS, "'Gmail' URL is correct.");
     }
 
-    @Test (description ="Test 4: Does the 'Images' link bring the user to the 'Images' page?")
+    @Test (priority = 4, description ="Test 4: Does the 'Images' link bring the user to the 'Images' page?")
     public void doesImagesLinkWork() {
         Assert.assertTrue(googleHomePageObjects.images(driver).isDisplayed());
         test.log(LogStatus.PASS, "'Images' link is displayed.");
@@ -61,7 +61,7 @@ public class GoogleHomepageTests extends BaseTest {
     }
 
     //This is currently set to fail (to check Extent Report)
-    @Test (description ="Test 5: Does the 'Apps' link open the 'Apps' modal? " +
+    @Test (priority = 5, description ="Test 5: Does the 'Apps' link open the 'Apps' modal? " +
             "Note: This test is set to fail so you can see error messaging and screenshots.")
     public void doesAppsLinkWork() {
         Assert.assertTrue(googleHomePageObjects.apps(driver).isDisplayed());
@@ -72,7 +72,7 @@ public class GoogleHomepageTests extends BaseTest {
         test.log(LogStatus.PASS, "This should not appear in report because it failed.");
     }
 
-    @Test (description ="Test 6: Does the 'Sign In' button bring the user to the 'Sign In' page?")
+    @Test (priority = 6, description ="Test 6: Does the 'Sign In' button bring the user to the 'Sign In' page?")
     public void doesSignInButtonWork() {
         Assert.assertTrue(googleHomePageObjects.signIn(driver).isDisplayed());
         test.log(LogStatus.PASS, "'Sign In Button' link is displayed.");

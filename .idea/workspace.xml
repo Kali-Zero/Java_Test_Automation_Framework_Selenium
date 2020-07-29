@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b977fb8-0833-489d-8648-aa76b25460d2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ExtentReports/2020-06-07 05-52 PM - Automation Report - Development - Chrome/2020-06-07 05-52 PM - Automation Report - Development - Chrome.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/src/main/java/core/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/framework/src/main/java/core/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/src/main/java/resources/extent-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/framework/src/main/java/resources/extent-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/regressiontests/src/test/java/googlehomepagetests/GoogleHomepageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/regressiontests/src/test/java/googlehomepagetests/GoogleHomepageTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,6 +192,8 @@
       <workItem from="1591478520883" duration="602000" />
       <workItem from="1591480043994" duration="2611000" />
       <workItem from="1591542115247" duration="9527000" />
+      <workItem from="1595116787619" duration="1388000" />
+      <workItem from="1596030601082" duration="71000" />
     </task>
     <servers />
   </component>
