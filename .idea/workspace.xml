@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="6b977fb8-0833-489d-8648-aa76b25460d2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ExtentReports/2020-11-09 06-44 PM - Automation Report - Development - Chrome/2020-11-09 06-44 PM - Automation Report - Development - Chrome - Screenshots/doesAppsLinkWork - 2020-11-09 06-44 PM.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExtentReports/2020-11-09 06-44 PM - Automation Report - Development - Chrome/2020-11-09 06-44 PM - Automation Report - Development - Chrome.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framework/src/main/java/resources/browser.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/regressiontests/src/test/java/googlehomepagetests/GoogleHomepageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/regressiontests/src/test/java/googlehomepagetests/GoogleHomepageTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/src/main/java/core/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/framework/src/main/java/core/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/src/main/java/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/framework/src/main/java/resources/config.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +30,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Users\Kali\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\202.7660.26\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="1Osl4CWYZLCMYC3oEcCATu49Z7b" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -36,7 +50,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../MP3Player" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -49,7 +63,18 @@
       <recent name="C:\Kali's Files\0_IdeaProjects\KaliTAF" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.GoogleHomepageTests.doesAboutLinkWork">
+  <component name="RunManager" selected="TestNG.GoogleHomepageTests">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="C:/Kali's Files/0_IdeaProjects/KaliTAF/regressiontests/TestNG.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="regressiontests" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/regressiontests/TestNG.xml" />
@@ -133,14 +158,15 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.GoogleHomepageTests" />
         <item itemvalue="TestNG.GoogleHomepageTests.doesAboutLinkWork" />
         <item itemvalue="TestNG.C:/Kali's Files/0_IdeaProjects/KaliTAF/regressiontests/TestNG.xml" />
-        <item itemvalue="TestNG.GoogleHomepageTests" />
         <item itemvalue="TestNG.GoogleHomepageTests.doesGmailLinkWork" />
         <item itemvalue="TestNG.GoogleHomepageTests.doesAppsLinkWork" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -194,11 +220,12 @@
       <workItem from="1591542115247" duration="9527000" />
       <workItem from="1595116787619" duration="1388000" />
       <workItem from="1596030601082" duration="71000" />
+      <workItem from="1604959234742" duration="3465000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -216,26 +243,30 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1453" height="231" key="GridCell.Tab.0.bottom" timestamp="1591578127257">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1453" height="231" key="GridCell.Tab.0.bottom/1920.-12.1707.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591578127257" />
-    <state width="1453" height="231" key="GridCell.Tab.0.center" timestamp="1591578127257">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1453" height="231" key="GridCell.Tab.0.center/1920.-12.1707.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591578127257" />
-    <state width="1453" height="231" key="GridCell.Tab.0.left" timestamp="1591578127257">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1453" height="231" key="GridCell.Tab.0.left/1920.-12.1707.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591578127257" />
-    <state width="1453" height="231" key="GridCell.Tab.0.right" timestamp="1591578127257">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1453" height="231" key="GridCell.Tab.0.right/1920.-12.1707.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1591578127257" />
-    <state x="549" y="337" key="com.intellij.ide.util.TipDialog" timestamp="1584040093732">
+    <state x="606" y="338" key="#Notifications" timestamp="1604959276504">
       <screen x="0" y="0" width="1707" height="1027" />
     </state>
-    <state x="549" y="337" key="com.intellij.ide.util.TipDialog/0.0.1707.1027@0.0.1707.1027" timestamp="1584040093732" />
+    <state x="606" y="338" key="#Notifications/0.0.1707.1027@0.0.1707.1027" timestamp="1604959276504" />
+    <state width="1538" height="324" key="GridCell.Tab.0.bottom" timestamp="1604976278931">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1538" height="324" key="GridCell.Tab.0.bottom/-2560.0.1707.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604976278931" />
+    <state width="1540" height="284" key="GridCell.Tab.0.bottom/0.0.1707.1027@0.0.1707.1027" timestamp="1604959548025" />
+    <state width="1538" height="324" key="GridCell.Tab.0.center" timestamp="1604976278931">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1538" height="324" key="GridCell.Tab.0.center/-2560.0.1707.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604976278931" />
+    <state width="1540" height="284" key="GridCell.Tab.0.center/0.0.1707.1027@0.0.1707.1027" timestamp="1604959548025" />
+    <state width="1538" height="324" key="GridCell.Tab.0.left" timestamp="1604976278931">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1538" height="324" key="GridCell.Tab.0.left/-2560.0.1707.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604976278931" />
+    <state width="1540" height="284" key="GridCell.Tab.0.left/0.0.1707.1027@0.0.1707.1027" timestamp="1604959548025" />
+    <state width="1538" height="324" key="GridCell.Tab.0.right" timestamp="1604976278931">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1538" height="324" key="GridCell.Tab.0.right/-2560.0.1707.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1604976278931" />
+    <state width="1540" height="284" key="GridCell.Tab.0.right/0.0.1707.1027@0.0.1707.1027" timestamp="1604959548025" />
   </component>
   <component name="masterDetails">
     <states>
