@@ -176,8 +176,8 @@ public class BaseTest {
         extent.flush();
         if(driver != null) {
             driver.close();
-            if (!prop.getProperty("browser").equals("Firefox")){driver.quit();}
-            //Bug id firefox is selected (tries to quit twice) - https://github.com/mozilla/geckodriver/issues/1235
+            //if (!prop.getProperty("browser").equals("Firefox")){driver.quit();}
+            //Bug if firefox is selected (tries to quit twice) - https://github.com/mozilla/geckodriver/issues/1235
         }
     }
 
