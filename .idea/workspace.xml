@@ -5,14 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b977fb8-0833-489d-8648-aa76b25460d2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/framework/src/main/java/resources/ABL_logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExtentReports/2020-11-09 06-44 PM - Automation Report - Development - Chrome/2020-11-09 06-44 PM - Automation Report - Development - Chrome - Screenshots/doesAppsLinkWork - 2020-11-09 06-44 PM.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExtentReports/2020-11-09 06-44 PM - Automation Report - Development - Chrome/2020-11-09 06-44 PM - Automation Report - Development - Chrome.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ExtentReports/2020-11-09 06-44 PM - Automation Report - Development - Chrome/TestTimes.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/framework/src/main/java/core/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/framework/src/main/java/core/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/src/main/java/resources/ABLlogo.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/framework/src/main/java/resources/browser.properties" beforeDir="false" afterPath="$PROJECT_DIR$/framework/src/main/java/resources/browser.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/src/main/java/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/framework/src/main/java/resources/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pageobjects/src/main/java/googlepageobjects/GoogleHomePageObjects.java" beforeDir="false" afterPath="$PROJECT_DIR$/pageobjects/src/main/java/googlepageobjects/GoogleHomePageObjects.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/src/main/java/resources/extent-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/framework/src/main/java/resources/extent-config.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,14 +69,16 @@
       <recent name="C:\Kali's Files\0_IdeaProjects\KaliTAF" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.GoogleHomepageTests.doesAppsLinkWork">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.GoogleHomepageTests">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -166,9 +166,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.GoogleHomepageTests.doesAppsLinkWork" />
         <item itemvalue="TestNG.GoogleHomepageTests" />
         <item itemvalue="TestNG.GoogleHomepageTests.doesAboutLinkWork" />
+        <item itemvalue="TestNG.GoogleHomepageTests.doesAppsLinkWork" />
         <item itemvalue="TestNG.C:/Kali's Files/0_IdeaProjects/KaliTAF/regressiontests/TestNG.xml" />
         <item itemvalue="TestNG.GoogleHomepageTests.doesGmailLinkWork" />
       </list>
@@ -230,7 +230,8 @@
       <workItem from="1596030601082" duration="71000" />
       <workItem from="1604959234742" duration="3465000" />
       <workItem from="1618263272535" duration="287000" />
-      <workItem from="1618263571842" duration="1052000" />
+      <workItem from="1618263571842" duration="1343000" />
+      <workItem from="1619541698268" duration="10537000" />
     </task>
     <servers />
   </component>

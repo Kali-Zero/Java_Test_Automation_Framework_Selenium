@@ -8,10 +8,7 @@ import io.github.bonigarcia.wdm.EdgeDriverManager;
 import io.github.bonigarcia.wdm.FirefoxDriverManager;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.Dimension;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -48,12 +45,13 @@ public class BaseTest {
 
     private String reportTitle()throws IOException {
         prop.load(new FileInputStream(new File("./../framework/src/main/java/resources/config.properties")));
+        prop.load(new FileInputStream(new File("./../framework/src/main/java/resources/browser.properties")));
         String env = "Unknown";
-        String webBrowser = prop.getProperty("browser");
+        //String webBrowser = prop.getProperty("browser");
         if     (prop.getProperty("base_url").contains(prop.getProperty("env_dev")))  {env = "Development";}
         else if(prop.getProperty("base_url").contains(prop.getProperty("env_prod"))) {env = "Production";}
         else if(prop.getProperty("base_url").contains(prop.getProperty("env_local"))){env = "Local";}
-        return timeStamp+" - Automation Report - "+env+ " - " +webBrowser;
+        return timeStamp+" - Automation Report - "+env+ " - " +prop.getProperty("browser");
     }
     private String getScreenShot(String screenshotName) throws IOException{
         File source = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
@@ -65,6 +63,11 @@ public class BaseTest {
     }
 
     public void login(){
+        //Checks to see if that stupid chrome cert page appears, and if it does, click through it so I can run my tests
+        if(driver.findElement(By.xpath("//*[text()[contains(.,'Your connection is not private')]]")).isDisplayed()){
+            driver.findElement(By.id("details-button")).click();
+            driver.findElement(By.id("proceed-link")).click();
+        }
         basePage.usernameField(driver).sendKeys(prop.getProperty("base_username"));
         basePage.passwordField(driver).sendKeys(prop.getProperty("base_password"));
         basePage.signInButton(driver).click();

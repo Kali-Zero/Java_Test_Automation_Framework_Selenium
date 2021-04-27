@@ -2,7 +2,7 @@
 <extentreports>
     <configuration>
         <!-- report theme: standard, dark -->
-        <theme>dark</theme>
+        <theme>standard</theme>
 
         <!-- document encoding: defaults to UTF-8 -->
         <encoding>UTF-8</encoding>
@@ -14,17 +14,19 @@
         <protocol>https</protocol>
 
         <!-- title of the document -->
-        <documentTitle>ExtentReports 2.41.2</documentTitle>
+        <documentTitle>KaliTAF Automation Report</documentTitle>
 
         <!-- Report name - displayed at top-nav-->
-        <reportName>
-            <!--Add a logo! (Not sure how to do it without the absolute path yet. Needs a relative path)-->
-            <![CDATA[<img width="25" height="25" alt="ABL Logo"
-            src="C:/Kali's Files/0_IdeaProjects/KaliTAF/framework/src/main/java/resources/ABLlogo.png"/>]]>
-        </reportName>
+        <reportName>KaliTAF Report Name - </reportName>
 
         <!-- report headline - displayed at top-nav, after reportHeadline -->
-        <reportHeadline>KaliTAF Report - Automation Report Headline!</reportHeadline>
+        <reportHeadline>
+            KaliTAF Report Headline!
+            <!--Add a logo! (Not sure how to copy the logo into the report folder
+            or do it without the absolute path yet. Needs a relative path.
+            Also, pushes date onto another line, making it invisible.)-->
+            <!--<![CDATA[<img src="D:\0 - Kali's Projects\0_IdeaProjects\KaliTAF\framework\src\main\java\resources\ABL_logo.png"/>]]>-->
+        </reportHeadline>
 
         <!-- global date format override: defaults to yyyy-MM-dd -->
         <dateFormat>yyyy-MM-dd</dateFormat>
@@ -34,6 +36,17 @@
 
         <!-- custom javascript -->
         <scripts>
+            <!--Replace ExtentReports link with something else.-->
+            <!--Does not work?-->
+            <![CDATA[
+                $(document).ready(function(){
+                    $(".logo-content").hide();
+                    $(".logo-container").html("Company Name")
+                    <href="Your Website URL Here">;
+                });
+            ]]>
+        </scripts>
+        <scripts>
             <![CDATA[$(document).ready(function(){});]]>
         </scripts>
         <scripts>
@@ -42,8 +55,6 @@
         </scripts>
 
         <!-- custom styles -->
-        <styles>
-            <![CDATA[     ]]>
-        </styles>
+        <styles><![CDATA[]]></styles>
     </configuration>
 </extentreports>
