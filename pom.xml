@@ -16,9 +16,10 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <selenium.version>3.141.59</selenium.version>
-        <webdrivermanager.version>3.7.1</webdrivermanager.version>
-        <java.version>11</java.version>
-        <testng.version>6.14.3</testng.version>
+        <!-- WebDriver Manager https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+        <webdrivermanager.version>4.4.3</webdrivermanager.version>
+        <java.version>16</java.version>
+        <testng.version>7.4.0</testng.version>
     </properties>
     <dependencies> <!-- Selenium dependencies -->
         <dependency>
@@ -31,35 +32,25 @@
             <artifactId>selenium-java</artifactId>
             <version>${selenium.version}</version>
         </dependency>
-        <dependency> <!-- WebDriver Manager https://github.com/bonigarcia/webdrivermanager/commit/0dfc857162a8aadb59d23b6c0cdd7a642b2b79b2 -->
-            <groupId>io.github.bonigarcia</groupId>
-            <artifactId>webdrivermanager</artifactId>
-            <version>${webdrivermanager.version}</version>
-        </dependency>
         <dependency> <!-- Chrome WebDriver https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver -->
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-chrome-driver</artifactId>
             <version>${selenium.version}</version>
         </dependency>
-        <dependency> <!-- Firefox WebDriver https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-firefox-driver -->
+        <dependency> <!-- Firefox Webdriver https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-firefox-driver -->
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-firefox-driver</artifactId>
-            <version>${webdrivermanager.version}</version>
+            <version>${selenium.version}</version>
         </dependency>
         <dependency> <!-- MSEdge Webdriver https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-edge-driver -->
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-edge-driver</artifactId>
-            <version>${webdrivermanager.version}</version>
+            <version>${selenium.version}</version>
         </dependency>
         <dependency> <!-- IE11 Webdriver https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-ie-driver -->
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-ie-driver</artifactId>
-            <version>${webdrivermanager.version}</version>
-        </dependency>
-        <dependency> <!-- TestNG dependency -->
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>${testng.version}</version>
+            <version>${selenium.version}</version>
         </dependency>
         <dependency> <!-- Simple Logging Facade https://mvnrepository.com/artifact/org.slf4j/slf4j-api  -->
             <groupId>org.slf4j</groupId>
@@ -93,9 +84,10 @@
     <build>
         <plugins>
             <plugin>
+                <!--https://maven.apache.org/plugins/-->
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>LATEST</version>
+                <version>3.8.1</version>
                 <configuration>
                     <source>${java.version}</source>
                     <target>${java.version}</target>
