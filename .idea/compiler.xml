@@ -6,18 +6,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="framework" />
         <module name="pageobjects" />
-        <module name="domain" />
+        <module name="framework" />
         <module name="regressiontests" />
+        <module name="domain" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="domain" target="11" />
+      <module name="domain" target="16" />
       <module name="framework" target="8" />
-      <module name="pageobjects" target="11" />
-      <module name="regressiontests" target="11" />
-      <module name="TestAutomation" target="11" />
+      <module name="pageobjects" target="16" />
+      <module name="regressiontests" target="16" />
+      <module name="TestAutomation" target="16" />
     </bytecodeTargetLevel>
   </component>
 </project>

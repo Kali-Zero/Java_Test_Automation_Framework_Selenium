@@ -51,7 +51,7 @@ public class GoogleHomepageTests extends BaseTest {
         test.log(LogStatus.PASS, "'Gmail' URL is correct.");
     }
 
-    @Test (priority = 4, description ="Test 4: Does the 'Images' link bring the user to the 'Images' page?")
+    @Test(priority = 4, description ="Test 4: Does the 'Images' link bring the user to the 'Images' page?")
     public void doesImagesLinkWork() {
         Assert.assertTrue(googleHomePageObjects.images(driver).isDisplayed());
         test.log(LogStatus.PASS, "'Images' link is displayed.");
