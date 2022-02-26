@@ -17,7 +17,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <selenium.version>3.141.59</selenium.version>
         <!-- WebDriver Manager https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
-        <webdrivermanager.version>4.4.3</webdrivermanager.version>
+        <webdrivermanager.version>5.0.1</webdrivermanager.version>
         <java.version>16</java.version>
         <testng.version>7.3.0</testng.version>
     </properties>

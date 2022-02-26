@@ -131,10 +131,6 @@ public class BaseTest {
                     driver = new FirefoxDriver(firefoxOptions);
                 } else {driver = new FirefoxDriver();}
                 break;
-            case "IE11":  //TODO: SUPER SLOW for some reason - Investigate later.
-                WebDriverManager.iedriver().version(browserProps.getProperty("ie_driver_version")).setup();
-                driver = new InternetExplorerDriver();
-                break;
             case "MSEdge":
                 WebDriverManager.edgedriver().version(browserProps.getProperty("ms_edge_version")).setup();
                 setProperty("is_headless", browserProps.getProperty("is_headless"));
