@@ -60,7 +60,7 @@
    
 ---  
    Here is the framework tutorial I based mine on - I found it VERY helpful:    
-    [How to Develop a Test Automation Framework From Scratch?](https://www.testingexcellence.com/develop-test-automation-framework-scratch/)    
+    [How to Develop a Test Automation Framework From Scratch?](https://web.archive.org/web/20190811124211/https://www.testingexcellence.com/develop-test-automation-framework-scratch/)    
     Tutorial by [Amir Ghahrai](https://www.linkedin.com/in/aghahrai/)
     
 ---    
@@ -76,7 +76,10 @@
 ---           
    GitHub Readme Formatting:    
    [Writing on GitHub](https://help.github.com/en/github/writing-on-github)
+    Note: if git is being weird with long file names, try this (in administrator mode):
+   git config --system core.longpaths true
    
 ---   
 *My Favorite IDE:*  
     [Jetbrains' IntelliJ IDE](https://www.jetbrains.com/idea/features/)
+

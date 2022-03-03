@@ -30,7 +30,7 @@ public class GoogleHomepageTests extends BaseTest {
         WebDriverWait wait = new WebDriverWait(driver, 60);
         Assert.assertTrue(googleHomePageObjects.store(driver).isDisplayed());
         test.log(LogStatus.PASS, "'Store' link is displayed.");
-        googleHomePageObjects.store(driver).click();
+        wait.until(ExpectedConditions.elementToBeClickable(googleHomePageObjects.store(driver))).click();
         wait.until(ExpectedConditions.urlContains(prop.getProperty("store_url")));
         Assert.assertTrue(driver.getCurrentUrl().contains(prop.getProperty("store_url")), "'Store' URL is incorrect!");
         test.log(LogStatus.PASS, "'Store' URL is correct.");
@@ -41,15 +41,15 @@ public class GoogleHomepageTests extends BaseTest {
         WebDriverWait wait = new WebDriverWait(driver, 60);
         Assert.assertTrue(googleHomePageObjects.gmail(driver).isDisplayed());
         test.log(LogStatus.PASS, "'Gmail' link is displayed.");
-        googleHomePageObjects.gmail(driver).click();
+        wait.until(ExpectedConditions.elementToBeClickable(googleHomePageObjects.gmail(driver))).click();
         wait.until(ExpectedConditions.or(
                 ExpectedConditions.urlContains(prop.getProperty("logged_in_gmail_url")),
                 ExpectedConditions.urlContains(prop.getProperty("not_logged_in_gmail_url"))
         ));
         Assert.assertTrue(
                 driver.getCurrentUrl().contains(prop.getProperty("logged_in_gmail_url")) ||
-                driver.getCurrentUrl().contains(prop.getProperty("not_logged_in_gmail_url")
-                ), "'Gmail' URL is incorrect!");
+                driver.getCurrentUrl().contains(prop.getProperty("not_logged_in_gmail_url")),
+                "'Gmail' URL is incorrect!");
         test.log(LogStatus.PASS, "'Gmail' URL is correct.");
     }
 
@@ -70,7 +70,7 @@ public class GoogleHomepageTests extends BaseTest {
         WebDriverWait wait = new WebDriverWait(driver, 60);
         Assert.assertTrue(googleHomePageObjects.apps(driver).isDisplayed());
         test.log(LogStatus.PASS, "'Apps' link is displayed.");
-        googleHomePageObjects.apps(driver).click();
+        wait.until(ExpectedConditions.elementToBeClickable(googleHomePageObjects.apps(driver))).click();
         driver.switchTo().activeElement();
         Assert.assertTrue(googleHomePageObjects.appsAccount(driver).isDisplayed());
         test.log(LogStatus.PASS, "This should not appear in report because it failed.");
@@ -81,8 +81,13 @@ public class GoogleHomepageTests extends BaseTest {
         WebDriverWait wait = new WebDriverWait(driver, 60);
         Assert.assertTrue(googleHomePageObjects.signIn(driver).isDisplayed());
         test.log(LogStatus.PASS, "'Sign In Button' link is displayed.");
-        googleHomePageObjects.signIn(driver).click();
+        wait.until(ExpectedConditions.elementToBeClickable(googleHomePageObjects.signIn(driver))).click();
         Assert.assertTrue(driver.getCurrentUrl().contains(prop.getProperty("account_url")), "'Account' URL is incorrect!");
         test.log(LogStatus.PASS, "Account text is displayed.");
+    }
+
+    @Test (priority = 7, description ="Test 7: This test is set to be skipped.")
+    public void skipTeEst() {
+        test.log(LogStatus.SKIP, "This test is set to be skipped.");
     }
 }

@@ -11,35 +11,33 @@
         <module>regressiontests</module>
         <module>framework</module>
         <module>pageobjects</module>
-        <module>domain</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <selenium.version>3.141.59</selenium.version>
-        <!-- WebDriver Manager https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
-        <webdrivermanager.version>5.0.1</webdrivermanager.version>
+        <selenium.version>4.1.2</selenium.version>
+        <webdrivermanager.version>4.4.1</webdrivermanager.version>
         <java.version>16</java.version>
-        <testng.version>7.3.0</testng.version>
+        <testng.version>6.14.3</testng.version>
     </properties>
     <dependencies> <!-- Selenium dependencies -->
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-server</artifactId>
-            <version>${selenium.version}</version>
+        <dependency> <!-- WebDriver Manager https://github.com/bonigarcia/webdrivermanager/commit/0dfc857162a8aadb59d23b6c0cdd7a642b2b79b2 -->
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>${webdrivermanager.version}</version>
         </dependency>
-        <dependency> <!-- TestNG dependency -->
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>${testng.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-java</artifactId>
-            <version>${selenium.version}</version>
-        </dependency>
-        <dependency> <!-- Chrome WebDriver https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver -->
+        <dependency> <!-- Chrome WebDriver https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver-->
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-chrome-driver</artifactId>
+            <version>${selenium.version}</version>
+        </dependency>
+        <dependency> <!-- IE WebDriver https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-ie-driver -->
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-ie-driver</artifactId>
+            <version>${selenium.version}</version>
+        </dependency>
+        <dependency> <!-- MS Edge Webdriver https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-edge-driver -->
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-edge-driver</artifactId>
             <version>${selenium.version}</version>
         </dependency>
         <dependency> <!-- Firefox Webdriver https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-firefox-driver -->
@@ -47,22 +45,27 @@
             <artifactId>selenium-firefox-driver</artifactId>
             <version>${selenium.version}</version>
         </dependency>
-        <dependency> <!-- MSEdge Webdriver https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-edge-driver -->
+        <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-edge-driver</artifactId>
+            <artifactId>selenium-server</artifactId>
+            <version>3.141.59</version>
+        </dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
             <version>${selenium.version}</version>
         </dependency>
-        <dependency> <!-- IE11 Webdriver https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-ie-driver -->
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-ie-driver</artifactId>
-            <version>${selenium.version}</version>
+        <dependency> <!-- TestNG dependency -->
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>${testng.version}</version>
         </dependency>
-        <dependency> <!-- Simple Logging Facade https://mvnrepository.com/artifact/org.slf4j/slf4j-api  -->
+        <dependency> <!-- Simple Logging Facade https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
             <version>1.7.29</version>
         </dependency>
-        <dependency> <!-- Simple Logging Facade Binding https://mvnrepository.com/artifact/org.slf4j/slf4j-log4j12  -->
+        <dependency><!-- Simple Logging Facade Binding https://mvnrepository.com/artifact/org.slf4j/slf4j-log4j12 -->
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-log4j12</artifactId>
             <version>1.7.29</version>
@@ -71,7 +74,7 @@
             <groupId>io.rest-assured</groupId>
             <artifactId>rest-assured</artifactId>
             <version>3.3.0</version>
-            <scope>test</scope>
+            <scope>compile</scope>
         </dependency>
         <dependency> <!-- Extent Reports 4 https://mvnrepository.com/artifact/com.aventstack/extentreports -->
             <groupId>com.aventstack</groupId>
@@ -85,14 +88,37 @@
             <version>2.41.2</version>
             <scope>compile</scope>
         </dependency>
+        <dependency>
+            <groupId>TestAutomation</groupId>
+            <artifactId>framework</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
     <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>3.0.0-M5</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
         <plugins>
             <plugin>
-                <!--https://maven.apache.org/plugins/-->
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0-M5</version>
+                <!--<configuration>-->
+                <!--Run each test class in a separate process, leaving as a note-->
+                <!--<forkCount>4</forkCount>-->
+                <!--</configuration>-->
+            </plugin>
+            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.1</version>
+                <version>3.8.0</version>
                 <configuration>
                     <source>${java.version}</source>
                     <target>${java.version}</target>
@@ -102,7 +128,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-failsafe-plugin</artifactId>
-                <version>2.18.1</version>
+                <version>3.0.0-M4</version>
                 <configuration>
                     <includes>
                         <include>**/Test*.java</include>
@@ -111,9 +137,6 @@
                         <include>**/*Scenario.java</include>
                         <include>**/*Scenarios.java</include>
                     </includes>
-                    <suiteXmlFiles>
-                        <!--<suiteXmlFile>src/test/resources/suites/${suiteXmlFile}</suiteXmlFile>-->
-                    </suiteXmlFiles>
                 </configuration>
                 <executions>
                     <execution>
