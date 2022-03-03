@@ -38,8 +38,8 @@
 
 ---
 *Apache Maven (Make sure you download the .bin and not the .src zip file):*   
-  [Apache Maven 3.6.1 Release Notes](https://maven.apache.org/docs/3.6.1/release-notes.html)  
-  [Apache Maven Installation Guide - Windows](https://docs.wso2.com/display/IS323/Installing+Apache+Maven+on+Windows)
+  [Apache Maven 3.8.4 Release Notes](https://maven.apache.org/download.cgi)  
+  [Apache Maven in 5 Minutes](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html)
   
 ---
 *Selenium:*   
@@ -80,6 +80,6 @@
    git config --system core.longpaths true
    
 ---   
-*My Favorite IDE:*  
+*My Main IDE:*  
     [Jetbrains' IntelliJ IDE](https://www.jetbrains.com/idea/features/)
 
