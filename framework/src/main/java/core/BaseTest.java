@@ -99,6 +99,7 @@ public class BaseTest {
                 chromeOptions.setExperimentalOption("prefs", prefs);
                 chromeOptions.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
                 chromeOptions.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS,true);
+                chromeOptions.addArguments("--remote-allow-origins=*");  //Chrome 111 update needs this
                 prefs.put("profile.default_content_settings.popups", 0);
                 prefs.put("download.default_directory",testDownloadFolderForChrome);
                 if ("true".equals(chrome_headless)) {

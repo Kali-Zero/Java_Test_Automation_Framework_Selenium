@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b977fb8-0833-489d-8648-aa76b25460d2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/src/main/java/core/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/framework/src/main/java/core/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/src/main/java/resources/browser.properties" beforeDir="false" afterPath="$PROJECT_DIR$/framework/src/main/java/resources/browser.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,31 +47,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Global Libraries" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.3845361" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Kali's Files\0_IdeaProjects\KaliTAF\framework\src\main\java\resources" />
       <recent name="C:\Kali's Files\0_IdeaProjects\KaliTAF" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.GoogleHomepageTests">
+  <component name="RunManager" selected="TestNG.D:/0 - Kali's Projects/0_IdeaProjects/Kali-Test-Automation-Framework/regressiontests/TestNG.xml">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -164,8 +154,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.GoogleHomepageTests" />
         <item itemvalue="TestNG.D:/0 - Kali's Projects/0_IdeaProjects/Kali-Test-Automation-Framework/regressiontests/TestNG.xml" />
+        <item itemvalue="TestNG.GoogleHomepageTests" />
         <item itemvalue="TestNG.GoogleHomepageTests.doesAboutLinkWork" />
         <item itemvalue="TestNG.GoogleHomepageTests (2)" />
         <item itemvalue="TestNG.GoogleHomepageTests (1)" />
@@ -235,6 +225,7 @@
       <workItem from="1621960451131" duration="4256000" />
       <workItem from="1645892067091" duration="2536000" />
       <workItem from="1645894795468" duration="9870000" />
+      <workItem from="1678980736162" duration="225000" />
     </task>
     <servers />
   </component>
