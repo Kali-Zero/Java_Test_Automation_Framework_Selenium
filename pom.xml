@@ -17,7 +17,7 @@
         <selenium.version>4.1.2</selenium.version>
         <webdrivermanager.version>4.4.1</webdrivermanager.version>
         <java.version>16</java.version>
-        <testng.version>6.14.3</testng.version>
+        <testng.version>7.7.0</testng.version>
     </properties>
     <dependencies> <!-- Selenium dependencies -->
         <dependency> <!-- WebDriver Manager https://github.com/bonigarcia/webdrivermanager/commit/0dfc857162a8aadb59d23b6c0cdd7a642b2b79b2 -->
