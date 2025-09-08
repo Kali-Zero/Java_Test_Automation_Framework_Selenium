@@ -12,12 +12,5 @@
         <module name="domain" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="domain" target="16" />
-      <module name="framework" target="1.8" />
-      <module name="pageobjects" target="16" />
-      <module name="regressiontests" target="16" />
-      <module name="TestAutomation" target="16" />
-    </bytecodeTargetLevel>
   </component>
 </project>
