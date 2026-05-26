@@ -1,4 +1,4 @@
-**Kali's Test Automation Frame-Work-In-Progress**
+**Java Test Automation Framework - Note: Will be updating soon!**
 ---
     This is an example / template Test Automation Suite I built using:
         Language: Java (JDK 12)
